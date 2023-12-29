@@ -368,7 +368,6 @@ button {
   color: #1F1E1E;
 }
 .field__label--textarea {
-  margin: 0 0 10px;
   font-weight: 700;
   font-family: "Open Sans", sans-serif;
   font-size: 18px;
@@ -396,7 +395,7 @@ button {
   width: 100%;
 }
 .event-card__link:active .event-card__title {
-  color: #1F1E1E;
+  color: #bc3324;
   text-decoration-color: #bc3324;
 }
 .event-card__title {
