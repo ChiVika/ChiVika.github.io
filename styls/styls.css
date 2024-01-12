@@ -249,6 +249,8 @@ button {
   color: #1F1E1E;
 }
 .contacts-item__info {
+  display: block;
+  margin: 0 0 5px;
   font-weight: 400;
   font-size: 16px;
   line-height: normal;
@@ -261,6 +263,9 @@ button {
 }
 .contacts-item__info[href]:active {
   color: #bc3324;
+}
+.contacts-item:last-child {
+  margin-bottom: 0;
 }
 .radio {
   display: -webkit-box;
@@ -668,6 +673,62 @@ button {
           flex-direction: column;
   gap: 67px;
 }
+.sub {
+  max-width: 410px;
+  width: 100%;
+}
+.sub__title {
+  margin: 0 0 24px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.3;
+}
+.sub__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 49px;
+  margin-bottom: 15px;
+}
+.sub__input {
+  width: 100%;
+  border: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 100%;
+  padding: 15px 15px 15px 28px;
+  background-color: #ffffff;
+}
+.sub__input:focus {
+  outline: none;
+}
+.sub__submit {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 0;
+  border: none;
+  outline: none;
+  background-color: #1F1E1E;
+  color: #ffffff;
+  padding: 15px 23px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.3;
+  -webkit-transition: background-color 0.2s;
+  transition: background-color 0.2s;
+}
+.sub__submit:active {
+  background-color: #bc3324;
+}
 .pp {
   display: none;
   position: fixed;
@@ -899,6 +960,88 @@ button {
   max-width: 344px;
   width: 100%;
 }
+.page-footer {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 60px 0 75px;
+}
+.page-footer__container {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  max-width: 1414px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+.page-footer__border {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 60px;
+}
+.page-footer__border::before,
+.page-footer__border::after {
+  content: "";
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  height: 2px;
+  width: 2px;
+}
+.page-footer__border::before {
+  margin-right: 50px;
+  background: -webkit-gradient(linear, right top, left top, from(#1C1B1B), color-stop(82.86%, rgba(255, 255, 255, 0)));
+  background: linear-gradient(270deg, #1C1B1B 0%, rgba(255, 255, 255, 0) 82.86%);
+}
+.page-footer__border::after {
+  margin-left: 50px;
+  background: -webkit-gradient(linear, left top, right top, from(#1C1B1B), to(rgba(255, 255, 255, 0)));
+  background: linear-gradient(90deg, #1C1B1B 0%, rgba(255, 255, 255, 0) 100%);
+}
+.page-footer__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.page-footer__nav {
+  margin-right: 30px;
+  position: relative;
+  padding-left: 26px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 22px;
+}
+.page-footer__nav::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4px;
+  height: 100%;
+  background-color: #bc3324;
+}
+.page-footer__nav-link {
+  display: block;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  color: #1F1E1E;
+  -webkit-transition: color 0.2s;
+  transition: color 0.2s;
+}
+.page-footer__nav-link:active {
+  color: #bc3324;
+}
 @media (hover: hover) {
   .btn:hover {
     background-color: #1F1E1E;
@@ -914,7 +1057,13 @@ button {
     color: #bc3324;
     text-decoration-color: #bc3324;
   }
+  .sub__submit:hover {
+    background-color: #bc3324;
+  }
   .pp__sticky-btn:hover {
     background-color: #a51505;
+  }
+  .page-footer__nav-link:hover {
+    color: #bc3324;
   }
 }
