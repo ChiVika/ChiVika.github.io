@@ -945,8 +945,8 @@ textarea {
   font-weight: 600;
   font-family: "Open Sans", sans-serif;
 }
-.listing__link--mt0 {
-  margin-top: 0;
+.listing__link--mt25 {
+  margin-top: 25px;
   margin-bottom: 84px;
 }
 .home__listing {
@@ -1239,6 +1239,7 @@ textarea {
           align-items: flex-start;
 }
 .reserve__order {
+  max-height: 52px;
   grid-area: order;
 }
 .reserve__scheme {
@@ -1269,7 +1270,7 @@ textarea {
   text-align: right;
 }
 .events {
-  padding: 140px 0 90px;
+  padding: 145px 0 150px;
 }
 .events__listing {
   margin-bottom: 100px;
@@ -1293,6 +1294,16 @@ textarea {
   margin: 0 0 60px;
   font-size: 16px;
   line-height: 22px;
+}
+.events__container {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  max-width: 1414px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 40px;
+  padding-right: 40px;
 }
 .more-information {
   display: -webkit-box;
@@ -1347,13 +1358,6 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 .table {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  max-width: 1414px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 40px;
-  padding-right: 40px;
   width: 100%;
   border-collapse: collapse;
   color: #1F1E1E;
@@ -1546,7 +1550,8 @@ body {
   gap: 67px;
 }
 .do-it {
-  margin-top: 304px;
+  margin-top: 204px;
+  margin-bottom: 76px;
 }
 .do-it__first,
 .do-it__second {
@@ -1856,7 +1861,7 @@ body {
 .page-footer {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  padding: 60px 0 75px;
+  padding: 0px 0 75px;
 }
 .page-footer__container {
   -webkit-box-sizing: border-box;
@@ -2238,7 +2243,7 @@ body {
     padding-left: 40px;
     padding-right: 40px;
   }
-  .table {
+  .events__container {
     padding-left: 40px;
     padding-right: 40px;
   }
@@ -2330,7 +2335,7 @@ body {
     padding-left: 30px;
     padding-right: 30px;
   }
-  .table {
+  .events__container {
     padding-left: 30px;
     padding-right: 30px;
   }
@@ -2505,7 +2510,7 @@ body {
     padding-left: 20px;
     padding-right: 20px;
   }
-  .table {
+  .events__container {
     padding-left: 20px;
     padding-right: 20px;
   }
