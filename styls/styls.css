@@ -1964,6 +1964,18 @@ body {
 .page-footer__networks-cookies {
   margin-left: 60px;
 }
+.page-footer__networks-conf,
+.page-footer__networks-cookies,
+.page-footer__networks-other {
+  text-decoration: none;
+  -webkit-transition: background-color 0.2s;
+  transition: background-color 0.2s;
+}
+.page-footer__networks-conf:active,
+.page-footer__networks-cookies:active,
+.page-footer__networks-other:active {
+  color: #bc3324;
+}
 .reserve__section-title {
   margin: 0 0 20px;
   font-weight: 700;
@@ -2566,6 +2578,11 @@ body {
     background-color: #a51505;
   }
   .page-footer__nav-link:hover {
+    color: #bc3324;
+  }
+  .page-footer__networks-conf:hover,
+  .page-footer__networks-cookies:hover,
+  .page-footer__networks-other:hover {
     color: #bc3324;
   }
   .reserve__submit:hover {
