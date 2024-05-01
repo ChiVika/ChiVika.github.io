@@ -5,11 +5,32 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1,maximum-scale=1,user-scalable=no">
   <title>Lenni Art</title>
+  <meta name="description" content="Арт—пространство для людей, горящих сердец и делом">
+  <meta name="keywords" content="Lenni Art, пространство, мероприятия">
   <link rel="stylesheet" href="styls/styls.css?ver=0">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="shortcut icon" type="image/vnd.microsoft.icon" href="/assets/icons/favicon.ico">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32x32.png">
+  <link rel="mask-icon" href="/assets/favicons/safari-pinned-tab.svg" color="#bc3324">
+  <link rel="icon" type="image/png" sizes="192x192" href="/assets/icons/android-chrome-192x192.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="/assets/icons/android-chrome-512x512.png">
+  <link rel="manifest" href="/assets/icons/site.webmanifest">
+  <meta name="apple-mobile-web-app-title" content="Lenni Art">
+  <meta name="application-name" content="Lenni Art">
+  <meta name="theme-color" content="#dedede">
+
+
+  <meta property="og:title" content="Lenni Art" />
+  <meta property="og:description" content="Арт пространство для людей, горящих сердцем и делом" />
+  <meta property="og:image" content="/assets/images/lenni-art.jpg">
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://lenni-art.ru/" />
+
   <style>
     li {
       color: red;
@@ -37,8 +58,27 @@
         <a href="#" class="page-header__nav-link">Блог</a>
         <a href="#" class="page-header__nav-link">О нас</a>
         <a href="#" class="page-header__nav-link">Контакты</a>
+
+        <div class="page-header__nav-user">
+          <a href="#" class="page-header__nav-user-link">
+            Александр С.
+          </a>
+          <a href="#" class="page-header__nav-logout">
+            <svg class="page-header__nav-logout-icon" width="24" height="24">
+              <use xlink:href="assets/icons/symbols.svg#door"></use>
+            </svg>
+          </a>
+        </div>
       </nav>
       <a href="#" class="btn page-header__user-btn">Войти</a>
+      <div class="page-header__right-block">
+        <a href="#" class="page-header__user-btn">
+          <svg class="page-header__user-icon" width="21" height="18">
+            <use xlink:href="assets/icons/symbols.svg#user"></use>
+          </svg>
+        </a>
+        <button type="button" class="page-header__nav-toggle" id="js-navToggle"></button>
+      </div>
     </div>
   </header>
   <main class="main">
@@ -85,11 +125,11 @@
           <a href="#" class="page-footer__nav-link">Наши проекты</a>
           <a href="#" class="page-footer__nav-link">Контакты</a>
         </nav>
-        <form class="page-footer__form sub">
+        <form action="https://jsonplaceholder.typicode.com/posts" class="page-footer__form sub" id="js-subForm">
           <h4 class="sub__title">Подпишись и будь в курсе происходящего</h4>
-          <div class="sub__wrapper">
+          <div class="sub__wrapper" id="js-wrapper">
             <input type="email" name="email" placeholder="Email" class="sub__input" required />
-            <button type="submit" class="sub__submit">Подписаться</button>
+            <button type="submit" class="sub__submit" id="js-SubButton">Подписаться</button>
           </div>
           <label class="sub__check check">
             <input type="checkbox" class="check__input" name="agree" required />
@@ -106,19 +146,19 @@
         <a href="#" class="page-footer__networks-cookies">Cookies</a>
 
         <div class="networks__icons">
-          <div class="networks__icons-img">
+          <a href="#" class="networks__icons-img">
             <svg class="link__icon" width="24" height="24">
               <use xlink:href="assets/icons/symbols.svg#insta"></use>
             </svg>
-          </div>
+          </a>
         </div>
 
         <div class="networks__icons1">
-          <div class="networks__icons-img">
+          <a href="#" class="networks__icons-img">
             <svg class="link__icon" width="24" height="24">
               <use xlink:href="assets/icons/symbols.svg#vk"></use>
             </svg>
-          </div>
+          </a>
         </div>
 
         <a href="#" class="page-footer__networks-other">Создание и продвижение</a>
